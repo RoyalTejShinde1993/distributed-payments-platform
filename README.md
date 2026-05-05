@@ -49,3 +49,9 @@ make proto
 
 - The current scaffold provides the platform structure and transport abstractions.
 - The payment service can be expanded with gRPC handlers, persistence, and payment orchestration logic.
+
+## Screenshot
+
+Add a screenshot of the running HTTP gateway or service UI here. Place the image at `assets/screenshot.png` in the repository and it will be displayed below.
+
+![Service screenshot](assets/screenshot.png)
