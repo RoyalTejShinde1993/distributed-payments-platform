@@ -52,6 +52,6 @@ make proto
 
 ## Screenshot
 
-Add a screenshot of the running HTTP gateway or service UI here. Place the image at `assets/screenshot.png` in the repository and it will be displayed below.
+Add a screenshot of the running HTTP gateway or service UI here. Place the image at `Output.png` in the repository and it will be displayed below.
 
-![Service screenshot](/workspaces/distributed-payments-platform/Output.png)
+![Service screenshot](./Output.png)
