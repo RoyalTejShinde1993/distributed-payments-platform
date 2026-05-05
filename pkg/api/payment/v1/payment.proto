@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package payment.v1;
+
+option go_package = "github.com/RoyalTejShinde1993/distributed-payments-platform/pkg/api/payment/v1;paymentpb";
+
+message PaymentRequest {
+  string id = 1;
+  double amount = 2;
+  string currency = 3;
+  string customer_id = 4;
+}
+
+message PaymentResponse {
+  string id = 1;
+  string status = 2;
+  string message = 3;
+}
+
+message PaymentEvent {
+  string id = 1;
+  double amount = 2;
+  string currency = 3;
+  string status = 4;
+  int64 created_at = 5;
+}
+
+service PaymentService {
+  rpc ProcessPayment(PaymentRequest) returns (PaymentResponse);
+  rpc StreamPayments(stream PaymentRequest) returns (stream PaymentEvent);
+}
